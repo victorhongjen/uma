@@ -147,13 +147,13 @@
         <br /><br />
         <p>🤔 : How much do you charge for your service?</p>
         <p>
-          🙋🏻‍♂️ : $30 base. $2 per mile travel distance. $60 per hour labor(upload
+          🙋🏻‍♂️ : $40 base. $2 per mile travel distance. $60 per hour labor(upload
           and download only).
           <br />
           <br />
           A quick example: you schedule an UMA to move from your dorm at Quarto
           to Uhaul storage on W Covell Blvd <br />
-          <li>Base: $30</li>
+          <li>Base: $40</li>
           <li>Mileage: $2 x 2 equals $4</li>
           <li>
             Labor: 40 minutes labor (upload and download, 20 at each location)
@@ -161,7 +161,7 @@
           </li>
 
           <br />
-          Your total in this example will be $74.
+          Your total in this example will be $84.
         </p>
         <br /><br />
         <p>🤔 : What size are your trailers?</p>
@@ -291,7 +291,10 @@
           $30 (base) + $40 (20 minutes upload & 20 minutes download) + $4 (2
           miles distance) = $74
         </h1>
-        <br /><br />
+        <br /><br /><BR>    </BR>
+        <h1>
+            *10% STUDENT AND SENIOR DISCOUNT
+        </h1>
         <h1>
           *Additional disposal fee will be added for junk removal jobs.
           <a href="#contact">Contact us </a>for more detail.
@@ -304,30 +307,31 @@
     <!-- contact section starts -->
     <section class="contact" id="contact">
       <h1 class="heading">Contact US</h1>
-      <form action="">
+      <form id="contactform" action="https://formsubmit.io/send/umamicromoving@gmail.com" method="POST">
         <div class="inputBox">
-          <input type="text" required placeholder="Name" />
+          <input type="text" name="name" required placeholder="Name" />
           <!-- <label>Name</label> -->
         </div>
         <div class="inputBox">
-          <input type="email" required placeholder="Email" />
+          <input type="email" name="email" required placeholder="Email" />
           <!-- <label>Email</label> -->
         </div>
         <div class="inputBox">
-          <input type="text" required placeholder="xxx-xxx-xxxx" />
+          <input type="text" name="phone" required placeholder="xxx-xxx-xxxx" />
           <!-- <label>XXX-XXX-XXXX</label> -->
         </div>
         <div class="inputBox">
           <textarea
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="10"
             placeholder="Questions"
+            required
           ></textarea>
           <!-- <label>Message</label> -->
         </div>
-        <input type="submit" class="btn" value="send message" />
+        <button type="submit" class="btn" value="send message">Submit</button>
       </form>
     </section>
     <!-- contact section ends -->

@@ -110,10 +110,12 @@ header .navbar a:hover{
 }
 
 #image--biking {
+    display: block;
     width: 90%;
     border-radius: 5px;
     border: solid #fa01a3fe;
-    margin-left: 4rem;
+    margin: auto;
+    /* margin-left: 4rem; */
 }
 
 .home .content {

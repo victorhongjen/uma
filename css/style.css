@@ -64,7 +64,7 @@ header{
     padding: 2rem 7%;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
     background:#fff;
-    z-index: 1000
+    z-index: 1000;
 }
 
 header .logo{
@@ -73,10 +73,14 @@ header .logo{
     font-weight: bold;
 }
 
+/* header .navbar{
+    background-color: red;
+} */
+
 header .navbar a{
     font-size: 2rem;
     margin-left: 2.5rem;
-    color: var(--black);
+    color: var(--black);    
 }
 
 header .navbar a:hover{

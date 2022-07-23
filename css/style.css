@@ -270,7 +270,7 @@ header .navbar a:hover {
 }
 
 .faq-single.active .answer {
-  max-height: 100rem;
+  max-height: 100%;
 }
 
 #faq {

@@ -16,9 +16,79 @@
     transition: .2s linear;
 }
 
+/* *::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.accordion-item{
+    background-color: aqua;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0, 0, 0, 0.2);
+}
+
+.accordion-link{
+    
+    font-size: 2rem;
+    color: deeppink;
+    font-weight: 600;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+.accordion-link ion-icon{
+    color: #F95F1D;
+}
+
+.accordion-link .ion-remove{
+    display: none;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color:darkgoldenrod;
+
+}
+
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: chartreuse;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p{
+    color: #fff;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.accordion-item:target .answer{
+    max-height: 20rem;
+}
+
+ */
+
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-padding-top: 9rem;
 }
 
 section{
@@ -174,10 +244,38 @@ header .navbar a:hover{
   border-radius: 15px;
 }
 
+.faq-single{
+    margin: auto;
+    max-width: 80%;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid deeppink;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+.faq-single.active .answer{
+    max-height: 40rem;
+}
+
 #faq {
-    background: url("../images/pngkey.com-funny-meme-png-661421.png");
+    /* background: url("../images/pngkey.com-funny-meme-png-661421.png");
     background-position: top;
-    background-size: 100%;
+    background-size: 100%; */
     /* flex-wrap: wrap; */
 
 }
@@ -191,7 +289,7 @@ header .navbar a:hover{
     font-weight: bold;
     color: deeppink;
     /* text-shadow: 0 0 3px rgb(228, 50, 148); */
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-transform: lowercase;
 }
 
